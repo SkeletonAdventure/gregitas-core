@@ -155,6 +155,7 @@ dependencies {
     modImplementation("curse.maven:ice-and-fire-dragons-264231:5122408")
     modImplementation("curse.maven:citadel-331936:4848887")
     modImplementation("curse.maven:firmalife-453394:5775257")
+    modCompileOnly("curse.maven:decofirmacraft-1092211:6898750")
     modImplementation("curse.maven:apotheosis-313970:5145344")
     modImplementation("curse.maven:attributeslib-898963:5634071")
     modImplementation("curse.maven:framework-549225:5811593")

@@ -2,6 +2,8 @@ package com.allthemods.gravitas2.data.recipe;
 
 import com.allthemods.gravitas2.GregitasCore;
 import com.allthemods.gravitas2.material.GregitasMaterials;
+import com.ankmaniac.decofirmacraft.common.blocks.DFCBlocks;
+import com.ankmaniac.decofirmacraft.common.blocks.rock.DFCRock;
 import com.gregtechceu.gtceu.api.data.chemical.ChemicalHelper;
 import com.gregtechceu.gtceu.api.data.chemical.material.ItemMaterialData;
 import com.gregtechceu.gtceu.api.data.tag.TagPrefix;
@@ -224,6 +226,52 @@ public class GregitasRecipes {
         ROCK_BREAKER_RECIPES.recipeBuilder(GregitasCore.id("marble"))
                 .notConsumable(TFCBlocks.ROCK_BLOCKS.get(Rock.MARBLE).get(Rock.BlockType.RAW).get().asItem())
                 .outputItems(TFCBlocks.ROCK_BLOCKS.get(Rock.MARBLE).get(Rock.BlockType.RAW).get().asItem())
+                .duration(16)
+                .EUt(VA[HV])
+                .adjacentFluids(Fluids.WATER)
+                .adjacentFluids(Fluids.LAVA)
+                .save(provider);
+
+        // Decofirmacraft rocks
+        ROCK_BREAKER_RECIPES.recipeBuilder(GregitasCore.id("travertine"))
+                .notConsumable(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.TRAVERTINE).get(Rock.BlockType.RAW).get().asItem())
+                .outputItems(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.TRAVERTINE).get(Rock.BlockType.RAW).get().asItem())
+                .duration(16)
+                .EUt(VA[HV])
+                .adjacentFluids(Fluids.WATER)
+                .adjacentFluids(Fluids.LAVA)
+                .save(provider);
+
+        ROCK_BREAKER_RECIPES.recipeBuilder(GregitasCore.id("arkose"))
+                .notConsumable(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.ARKOSE).get(Rock.BlockType.RAW).get().asItem())
+                .outputItems(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.ARKOSE).get(Rock.BlockType.RAW).get().asItem())
+                .duration(16)
+                .EUt(VA[HV])
+                .adjacentFluids(Fluids.WATER)
+                .adjacentFluids(Fluids.LAVA)
+                .save(provider);
+
+        ROCK_BREAKER_RECIPES.recipeBuilder(GregitasCore.id("blueschist"))
+                .notConsumable(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.BLUESCHIST).get(Rock.BlockType.RAW).get().asItem())
+                .outputItems(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.BLUESCHIST).get(Rock.BlockType.RAW).get().asItem())
+                .duration(16)
+                .EUt(VA[HV])
+                .adjacentFluids(Fluids.WATER)
+                .adjacentFluids(Fluids.LAVA)
+                .save(provider);
+
+        ROCK_BREAKER_RECIPES.recipeBuilder(GregitasCore.id("serpentine"))
+                .notConsumable(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.SERPENTINE).get(Rock.BlockType.RAW).get().asItem())
+                .outputItems(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.SERPENTINE).get(Rock.BlockType.RAW).get().asItem())
+                .duration(16)
+                .EUt(VA[HV])
+                .adjacentFluids(Fluids.WATER)
+                .adjacentFluids(Fluids.LAVA)
+                .save(provider);
+
+        ROCK_BREAKER_RECIPES.recipeBuilder(GregitasCore.id("tuff"))
+                .notConsumable(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.TUFF).get(Rock.BlockType.RAW).get().asItem())
+                .outputItems(DFCBlocks.CUSTOM_ROCK_TYPES.get(DFCRock.TUFF).get(Rock.BlockType.RAW).get().asItem())
                 .duration(16)
                 .EUt(VA[HV])
                 .adjacentFluids(Fluids.WATER)
